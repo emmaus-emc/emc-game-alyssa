@@ -58,7 +58,10 @@ var beweegAlles = function () {
  */
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
-
+if (spelerX >= 1260) {
+spelerX = spelerX - 5;
+}
+if 
   // botsing kogel tegen vijand
 
 };
