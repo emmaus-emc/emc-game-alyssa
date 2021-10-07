@@ -29,20 +29,20 @@ var beweegAlles = function () {
 
     spelerX = spelerX + 5;
   }
-if (keyIsDown(37)) { // arrow left
+  if (keyIsDown(37)) { // arrow left
 
-  spelerX = spelerX -5;
-}
+    spelerX = spelerX - 5;
+  }
 
-if (keyIsDown(40)) { // 40= arrow down
+  if (keyIsDown(40)) { // 40= arrow down
 
-  spelerY = spelerY +5;
-}
+    spelerY = spelerY + 5;
+  }
 
-if (keyIsDown(38)) { // 38= arrow up
+  if (keyIsDown(38)) { // 38= arrow up
 
-  spelerY = spelerY -5;
-}
+    spelerY = spelerY - 5;
+  }
   // vijand
 
   // kogel
@@ -69,7 +69,7 @@ var verwerkBotsing = function () {
 var tekenAlles = function () {
   // achtergrond
   fill("pink");
-rect(0,0,1280,720);
+  rect(0, 0, 1280, 720);
   // vijand
 
   // kogel
