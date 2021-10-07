@@ -25,6 +25,24 @@ var spelerY = 600; // y-positie van speler
  * Updatet globale variabelen met posities van speler, vijanden en kogels
  */
 var beweegAlles = function () {
+  if (keyIsDown(39)) { // arrow right
+
+    spelerX = spelerX + 5;
+  }
+if (keyIsDown(37)) { // arrow left
+
+  spelerX = spelerX -5;
+}
+
+if (keyIsDown(40)) { // 40= arrow down
+
+  spelerY = spelerY +5;
+}
+
+if (keyIsDown(38)) { // 38= arrow up
+
+  spelerY = spelerY -5;
+}
   // vijand
 
   // kogel
@@ -50,16 +68,20 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
-
+  fill("pink");
+rect(0,0,1280,720);
   // vijand
 
   // kogel
 
   // speler
   fill("white");
-  rect(spelerX - 25, spelerY - 25, 50, 50);
-  fill("black");
-  ellipse(spelerX, spelerY, 10, 10);
+  rect(spelerX - 25, spelerY - 85, 50, 150);
+
+
+  fill("white");
+  rect(spelerX - 90, spelerY - 40, 190, 10);
+  ellipse(spelerX, spelerY - 125, 90, 90);
 
   // punten en health
 
@@ -87,7 +109,7 @@ function setup() {
   createCanvas(1280, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('blue');
+  background('pink');
 }
 
 /**
