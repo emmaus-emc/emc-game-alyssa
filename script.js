@@ -108,7 +108,15 @@ var tekenAlles = function () {
   rect(0, 0, 1280, 720);
   // vijand
 fill("green");
-rect (vijandX-25, vijandY, 50, 50);
+rect (vijandX-20, vijandY, 50, 50);
+
+fill("red");
+rect (vijandX-400, vijandY, 50, 50);
+
+
+fill ("yellow");
+rect (vijandX+400, vijandY, 50,50);
+
 
   // kogel
 
